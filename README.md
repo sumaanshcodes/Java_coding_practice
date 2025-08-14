@@ -92,7 +92,7 @@ Author - Sumansh Yadav
         obj.calculateInterest();
     }
 
-// Ques.- Multiplication of two floating numbers?
+// Q6. Ques.- Multiplication of two floating numbers?
 
 import java.util.Scanner;
 public class multiplicationof2floatingnumbers {
