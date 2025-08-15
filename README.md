@@ -1,35 +1,44 @@
 public class AssignmentOnMethod {
 
-    // ---------------- Q1: Student Info ----------------
+    // Q1. Print Student Info
     public void displayInfo() {
         System.out.println("Name: Aman Sharma");
         System.out.println("Age: 16");
         System.out.println("Grade: 10th");
     }
 
-    // ---------------- Q2: Add Two Numbers ----------------
-    public int addNumbers(int a, int b) {
-        return a + b;
+    // Q2. Add Two Numbers
+    public void addNumbers() {
+        int a = 15;
+        int b = 25;
+        int sum = a + b;
+        System.out.println("Sum: " + sum);
     }
 
-    // ---------------- Q3: Greeting ----------------
-    public String sayHello(String name) {
-        return "Hello, " + name + "! Welcome to Java programming.";
+    // Q3. Greeting Message
+    public void sayHello(String name) {
+        System.out.println("Hello, " + name + "! Welcome to Java programming.");
     }
 
-    // ---------------- Q4: Area of Circle ----------------
-    public double calculateArea(double radius) {
+    // Q4. Area of Circle
+    public void calculateArea() {
+        double radius = 7;
         double pi = 3.14;
-        return pi * radius * radius;
+        double area = pi * radius * radius;
+        System.out.println("Area of Circle: " + area);
     }
 
-    // ---------------- Q5: Simple Interest ----------------
-    public double calculateInterest(double P, double T, double R) {
-        return (P * T * R) / 100;
+    // Q5. Simple Interest
+    public void calculateInterest() {
+        double P = 1000;
+        double T = 2;
+        double R = 5;
+        double SI = (P * T * R) / 100;
+        System.out.println("Simple Interest: " + SI);
     }
 
-    // ---------------- Q6: Armstrong Number ----------------
-    public boolean isArmstrong(int num) {
+    // Q6. Armstrong Number
+    public void checkArmstrong(int num) {
         int original = num;
         int sum = 0;
         while (num > 0) {
@@ -37,11 +46,15 @@ public class AssignmentOnMethod {
             sum += digit * digit * digit;
             num /= 10;
         }
-        return sum == original;
+        if (sum == original) {
+            System.out.println(original + " is an Armstrong number.");
+        } else {
+            System.out.println(original + " is not an Armstrong number.");
+        }
     }
 
-    // ---------------- Q7: Palindrome Number ----------------
-    public boolean isPalindrome(int num) {
+    // Q7. Palindrome Number
+    public void checkPalindrome(int num) {
         int original = num;
         int reversed = 0;
         while (num > 0) {
@@ -49,10 +62,13 @@ public class AssignmentOnMethod {
             reversed = reversed * 10 + digit;
             num /= 10;
         }
-        return reversed == original;
+        if (reversed == original) {
+            System.out.println(original + " is a Palindrome number.");
+        } else {
+            System.out.println(original + " is not a Palindrome number.");
+        }
     }
 
-    // ---------------- Main Method ----------------
     public static void main(String[] args) {
         AssignmentOnMethod obj = new AssignmentOnMethod();
 
@@ -60,21 +76,21 @@ public class AssignmentOnMethod {
         obj.displayInfo();
 
         System.out.println("\nQ2 Output:");
-        System.out.println("Sum: " + obj.addNumbers(15, 25));
+        obj.addNumbers();
 
         System.out.println("\nQ3 Output:");
-        System.out.println(obj.sayHello("John"));
+        obj.sayHello("John");
 
         System.out.println("\nQ4 Output:");
-        System.out.println("Area of Circle: " + obj.calculateArea(7));
+        obj.calculateArea();
 
         System.out.println("\nQ5 Output:");
-        System.out.println("Simple Interest: " + obj.calculateInterest(1000, 2, 5));
+        obj.calculateInterest();
 
         System.out.println("\nQ6 Output:");
-        System.out.println("153 is Armstrong? " + obj.isArmstrong(153));
+        obj.checkArmstrong(153);
 
         System.out.println("\nQ7 Output:");
-        System.out.println("121 is Palindrome? " + obj.isPalindrome(121));
+        obj.checkPalindrome(121);
     }
 }
