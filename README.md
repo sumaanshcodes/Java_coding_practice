@@ -1,13 +1,13 @@
 public class AssignmentOnMethod {
 
-    // Q1. Print Student Info
+    // Q1. Create a class StudentInfo with a method displayInfo() that prints your name, age, and grade.
     public void displayInfo() {
         System.out.println("Name: Aman Sharma");
         System.out.println("Age: 16");
         System.out.println("Grade: 10th");
     }
 
-    // Q2. Add Two Numbers
+    // Q2. Create a class Calculator with a method addNumbers() that adds two numbers and prints the result.
     public void addNumbers() {
         int a = 15;
         int b = 25;
@@ -15,12 +15,15 @@ public class AssignmentOnMethod {
         System.out.println("Sum: " + sum);
     }
 
-    // Q3. Greeting Message
+    // Q3. Create a class Greeting with a method sayHello() that takes your name as a parameter and prints:
+    // Hello, Riya! Welcome to Java programming.
+    // Replace "Riya" with your name.
     public void sayHello(String name) {
         System.out.println("Hello, " + name + "! Welcome to Java programming.");
     }
 
-    // Q4. Area of Circle
+    // Q4. Create a class Circle with a method calculateArea() that calculates and prints the area of a circle.
+    // Formula: Area = π × radius × radius, Use: radius = 7 and π = 3.14
     public void calculateArea() {
         double radius = 7;
         double pi = 3.14;
@@ -28,45 +31,14 @@ public class AssignmentOnMethod {
         System.out.println("Area of Circle: " + area);
     }
 
-    // Q5. Simple Interest
+    // Q5. Create a class SimpleInterest with a method calculateInterest() that calculates simple interest.
+    // Formula: SI = (P × T × R) / 100, Use values: P = 1000, T = 2 years, R = 5%
     public void calculateInterest() {
         double P = 1000;
         double T = 2;
         double R = 5;
         double SI = (P * T * R) / 100;
         System.out.println("Simple Interest: " + SI);
-    }
-
-    // Q6. Armstrong Number
-    public void checkArmstrong(int num) {
-        int original = num;
-        int sum = 0;
-        while (num > 0) {
-            int digit = num % 10;
-            sum += digit * digit * digit;
-            num /= 10;
-        }
-        if (sum == original) {
-            System.out.println(original + " is an Armstrong number.");
-        } else {
-            System.out.println(original + " is not an Armstrong number.");
-        }
-    }
-
-    // Q7. Palindrome Number
-    public void checkPalindrome(int num) {
-        int original = num;
-        int reversed = 0;
-        while (num > 0) {
-            int digit = num % 10;
-            reversed = reversed * 10 + digit;
-            num /= 10;
-        }
-        if (reversed == original) {
-            System.out.println(original + " is a Palindrome number.");
-        } else {
-            System.out.println(original + " is not a Palindrome number.");
-        }
     }
 
     public static void main(String[] args) {
@@ -86,11 +58,5 @@ public class AssignmentOnMethod {
 
         System.out.println("\nQ5 Output:");
         obj.calculateInterest();
-
-        System.out.println("\nQ6 Output:");
-        obj.checkArmstrong(153);
-
-        System.out.println("\nQ7 Output:");
-        obj.checkPalindrome(121);
     }
 }
