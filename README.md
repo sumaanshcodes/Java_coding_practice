@@ -1,13 +1,13 @@
 public class AssignmentOnMethod {
 
-    // Q1. Create a class StudentInfo with a method displayInfo() that prints your name, age, and grade.
+    // Q1
     public void displayInfo() {
         System.out.println("Name: Aman Sharma");
         System.out.println("Age: 16");
         System.out.println("Grade: 10th");
     }
 
-    // Q2. Create a class Calculator with a method addNumbers() that adds two numbers and prints the result.
+    // Q2
     public void addNumbers() {
         int a = 15;
         int b = 25;
@@ -15,15 +15,12 @@ public class AssignmentOnMethod {
         System.out.println("Sum: " + sum);
     }
 
-    // Q3. Create a class Greeting with a method sayHello() that takes your name as a parameter and prints:
-    // Hello, Riya! Welcome to Java programming.
-    // Replace "Riya" with your name.
+    // Q3
     public void sayHello(String name) {
         System.out.println("Hello, " + name + "! Welcome to Java programming.");
     }
 
-    // Q4. Create a class Circle with a method calculateArea() that calculates and prints the area of a circle.
-    // Formula: Area = π × radius × radius, Use: radius = 7 and π = 3.14
+    // Q4
     public void calculateArea() {
         double radius = 7;
         double pi = 3.14;
@@ -31,8 +28,7 @@ public class AssignmentOnMethod {
         System.out.println("Area of Circle: " + area);
     }
 
-    // Q5. Create a class SimpleInterest with a method calculateInterest() that calculates simple interest.
-    // Formula: SI = (P × T × R) / 100, Use values: P = 1000, T = 2 years, R = 5%
+    // Q5
     public void calculateInterest() {
         double P = 1000;
         double T = 2;
